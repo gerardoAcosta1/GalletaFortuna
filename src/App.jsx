@@ -33,7 +33,7 @@ const addIndex = ()=>{
   return (
     <>
      <FortuneCard data={phrases[index]}/>
-     <button onClick={changeFondo}> cambiar fondo</button>
+     <button className='boton' onClick={changeFondo}>Probar Suerte</button>
     </>
   )
 }
