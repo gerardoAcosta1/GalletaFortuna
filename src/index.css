@@ -11,16 +11,42 @@ html, body{
 }
 .container{
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns:  auto auto ;
 }
 .search{
     margin-top: 30px;
 }
-.card{
-    width: 350px;
-    height: 250px;
-    background-color: rgb(98, 170, 228);
+
+button{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4.85px;
+    background: #38a0d8;
+    color: white;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0,0,0,0.25));
+    transition: 0.2s;
+    font-weight:12px;
+    
+}
+
+button:hover{
+    background: #1483be;
+    cursor: pointer;
+}
+.card {
+    width: 400px;
+    height: 180px;
+    padding: 10px;
+    background: linear-gradient(#e5f2ff, #d5f3ff);
+    border-radius: 4.85px;
+    offset: 0px 4.85;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0,0,0,0.25));
+    border-radius: 30px 100% 0 20px;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 30%;
+  
 }
 @media (min-width: 1200px) {
     .card{
@@ -29,6 +55,7 @@ html, body{
     }
     .search{
         width: auto;
+        margin-left: 10rem;
     }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -38,15 +65,18 @@ html, body{
     }
     .search{
         width: auto;
+        margin-left: 5rem;
+
     }
 }
 @media (max-width: 767px) {
     .card{
-        width: auto;
+        width: 400px;
         height: 250px;
     }
     .search{
         width: auto;
+        margin-left: 1rem;
     }
 }
 @media (max-width: 480px) {
@@ -56,8 +86,6 @@ html, body{
     }
     .search{
         width: auto;
-    }
-    h4{
-        width: 1rem;
+        margin-left: 1rem;
     }
 }

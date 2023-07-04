@@ -23,13 +23,14 @@ const Clima = () => {
     return (
        <>
        <div className="container">
-        <h4>{clima?.name}</h4>
+        
         <div className="search">
             <input type="text" />
             <button>Entrar</button>
             <div className="card">
                 
             </div>
+            <button>Cambiar a Kelvin</button>
         </div>
         <div className="darkMode">
             <button>darkMode</button>
