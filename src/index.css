@@ -48,6 +48,12 @@ button:hover{
     margin-top: 30%;
   
 }
+img{
+    position: absolute;
+    margin-left: 7rem;
+    width: 129px;
+    height: auto;
+}
 @media (min-width: 1200px) {
     .card{
         width: auto;
@@ -78,6 +84,7 @@ button:hover{
         width: auto;
         margin-left: 1rem;
     }
+    
 }
 @media (max-width: 480px) {
     .card{
@@ -88,4 +95,5 @@ button:hover{
         width: auto;
         margin-left: 1rem;
     }
+    
 }
