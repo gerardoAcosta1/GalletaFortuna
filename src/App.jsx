@@ -1,10 +1,10 @@
 import './App.css'
 import phrases from './data/phrases.json'
 import FortuneCard from './component/FortuneCard'
-import fondo1 from '/fondos/fondo1.jpg'
-import fondo2 from '/fondos/fondo2.jpg'
-import fondo3 from '/fondos/fondo3.jpg'
-import fondo4 from '/fondos/fondo4.jpg'
+import fondo1 from '/fondos/fondo1.2.jpg'
+import fondo2 from '/fondos/fondo2.2.jpg'
+import fondo3 from '/fondos/fondo3.2.jpg'
+import fondo4 from '/fondos/fondo4.2.jpg'
 import { useState } from 'react'
 
 function App() {
