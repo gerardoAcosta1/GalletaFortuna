@@ -1,0 +1,9 @@
+.main__app{
+    width: 100vw;
+    height: 100vh;
+
+    background: 50% 50% no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}

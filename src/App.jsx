@@ -11,6 +11,8 @@ function App() {
   const [fondo, setFondo] = useState(fondo1)
   const [index, setIndex] = useState(0)
 
+  
+
   function randomNumberInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -20,6 +22,7 @@ function App() {
     if(fondo === fondo2) setFondo(fondo3)
     if(fondo === fondo3) setFondo(fondo4)
     if(fondo === fondo4) setFondo(fondo1)
+    document.getElementById('main__app').style.backgroundImage = `url(${fondo})`
     addIndex()
   }
 const addIndex = ()=>{
@@ -28,13 +31,18 @@ const addIndex = ()=>{
  
   
 }
-    document.body.style.backgroundImage = `url(${fondo})`
-  
+window.addEventListener('load', e => {
+  document.getElementById('main__app').style.backgroundImage = `url(${fondo})`
+})
+
   return (
-    <>
-     <FortuneCard data={phrases[index]}/>
-     <button className='boton' onClick={changeFondo}>Probar Suerte</button>
-    </>
+    <div id='main__app' className='main__app'>
+     <FortuneCard 
+     data={phrases[index]}
+     changeFondo={changeFondo}
+     />
+    
+    </div>
   )
 }
 

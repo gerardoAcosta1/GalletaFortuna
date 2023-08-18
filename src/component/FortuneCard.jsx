@@ -1,12 +1,16 @@
+import '../styles/Fortune.css'
+const FortuneCard = ({data, changeFondo}) => {
 
-const FortuneCard = ({data}) => {
-    
+
     return (
-        <div className="main" >
+        <div id='fortune' className="main__fortune" >
+            
             <div className="cardPhrase">
             <p className="phrase">{data.phrase}</p>
-            </div>
            
+            </div>
+            <button className='boton' onClick={changeFondo}>Probar Suerte</button>
+
         </div>
     )
 }
